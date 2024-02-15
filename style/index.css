@@ -1296,16 +1296,12 @@ section,header,footer {
 }
 
 @media (min-width: 1280px) {
-  .xl\:left-7 {
-    left: 1.75rem;
+  .xl\:left-6 {
+    left: 1.5rem;
   }
 
   .xl\:top-9 {
     top: 2.25rem;
-  }
-
-  .xl\:left-6 {
-    left: 1.5rem;
   }
 
   .xl\:h-10 {
