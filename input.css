@@ -2,3 +2,83 @@
 @import'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'sf-pro';
+  src: url('../assets/font/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'sf-pro',sans-serif;
+  @apply bg-chineseBlack text-philippineGray
+}
+
+section,header,footer {
+  @apply md:px-4 px-6
+}
+
+.btn-primary {
+  @apply rounded-lg bg-screamingGreen text-black px-7 py-1 duration-500 hover:bg-[#79ee62] hover:scale-105
+}
+
+.btn-secondary {
+  @apply rounded-lg border-screamingGreen border px-5 py-1 text-white duration-500 hover:scale-105
+}
+
+.btn-tertiary {
+  @apply rounded-lg border border-chineseBlack px-10 py-1 duration-500 hover:scale-105 font-semibold text-sm
+}
+.heading-tertiary {
+  @apply font-semibold md:text-5xl leading-[1.2] text-3xl
+}
+
+.mobile-menu {
+  width: 40px;
+  height: 25px;
+  @apply relative cursor-pointer duration-500 md:hidden
+}
+
+.mobile-menu span {
+  width: 100%;
+  height: 4px;
+  @apply bg-white block rounded-sm absolute duration-500;
+}
+
+.middle {
+  top: 10px;
+}
+.bottom {
+  top: 20px;
+}
+
+.mobile-menu.active {
+  transform: rotate(-90deg) translateX(4px);
+}
+.mobile-menu.active .middle {
+  display: none;
+}
+.mobile-menu.active .top{
+  transform: rotate(45deg) translateX(4px) translateY(9px);
+}
+
+.mobile-menu.active .bottom {
+  transform: rotate(-45deg) translateX(4px) translateY(-9px);
+}
+
+.nav-mobile {
+  transform: translateX(-110%);
+  @apply absolute  bg-gunMetal flex flex-col items-center  rounded-md top-[5rem] py-8 gap-y-6 left-1 right-1 md:hidden duration-500
+}
+
+.nav-mobile.active {
+  transform: translateX(0);
+}
+
+@media (min-width: 539px) and (max-width: 767px){
+ .heading-primary {
+  @apply text-5xl;
+ }
+
+ .img-overlay {
+  @apply h-6 top-3 left-1
+ }
+}

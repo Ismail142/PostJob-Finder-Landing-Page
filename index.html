@@ -1,12 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Simple Tailwind</title>
-   <link rel="stylesheet" href="style/main.css">
-</head>
-<body>
-   <h1>Hello</h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PostJob</title>
+		<link rel="stylesheet" href="style/index.css" />
+		<script src="index.js" defer></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container mx-auto">
+				<!-- Header -->
+				<div class="flex pt-10 pb-4 justify-between items-center mb-10 relative">
+					<div class="flex gap-x-10">
+						<div class="flex items-center">
+							<img src="assets/images/logo.svg" alt="" class="mr-1" />
+							<p class="text-white">PostJob</p>
+						</div>
+						<ul class="gap-x-4 hidden lg:flex">
+							<li>
+								<a href="#" class="hover:text-white duration-200"
+									>AI Cover Letter Generator</a
+								>
+							</li>
+							<li>
+								<a href="#" class="hover:text-white duration-200"
+									>Resume Template</a
+								>
+							</li>
+							<li>
+								<a href="#" class="hover:text-white duration-200">Pricing</a>
+							</li>
+						</ul>
+					</div>
+					<div class="hidden gap-x-4 md:flex">
+						<button class="btn-secondary">Sign in</button>
+						<button class="btn-primary">Get Started</button>
+					</div>
+					<!-- Mobile Menu -->
+					<div class="mobile-menu">
+						<span class="top"></span>
+						<span class="middle"></span>
+						<span class="bottom"></span>
+					</div>
+					<!-- Mobile Nav Links -->
+					<ul class="nav-mobile">
+						<li>
+							<a href="#" class="hover:text-white duration-200"
+								>AI Cover Letter Generator</a
+							>
+						</li>
+						<li>
+							<a href="#" class="hover:text-white duration-200"
+								>Resume Template</a
+							>
+						</li>
+						<li>
+							<a href="#" class="hover:text-white duration-200">Pricing</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Slogan and Description -->
+				<div class="text-center mx-auto md:px-10 md:mt-32 mt-14">
+					<h1
+						class="font-semibold text-white leading-[1.2] lg:text-[5.6rem] md:text-6xl text-[2.125rem] heading-primary"
+					>
+						<span class="text-screamingGreen">Win your dream job</span
+						><br />with PostJob
+					</h1>
+					<p class="text-xs md:text-sm max-w-md mx-auto mt-4 my-3 max-md:px-6">
+						Submit better job app — 10x faster. AI cover letter generator,
+						resume keyword checker, outreach message writer, and more. Powered
+						by GPT
+					</p>
+					<div class="flex justify-center my-6">
+						<div
+							class="flex flex-col border border-philippineGray rounded-lg justify-between py-2 pl-4 pr-1 w-[25.6rem] md:flex-row focus-within:border-screamingGreen gap-y-4 max-md:mx-7"
+						>
+							<input
+								type="email"
+								placeholder="Your Email"
+								class="bg-chineseBlack outline-none max-md:text-center"
+							/>
+							<button class="btn-primary">Start For Free</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Info Cards -->
+				<div
+					class="flex flex-col gap-8 justify-between max-md:items-center my-20 md:flex-row max-md:text-center"
+				>
+					<!-- 1 child -->
+					<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+						<div>
+							<img src="assets/images/file.svg" alt="" class="max-md:mx-auto" />
+						</div>
+						<h4 class="text-white mb-2 mt-3">AI Cover Letter Generator</h4>
+						<p class="text-sm">
+							The AI Cover Letter Generator is a tool that uses artificial
+							intelligence algorithms to create personalized cover letters for
+							job applicants.
+						</p>
+					</div>
+
+					<!-- 2 child -->
+					<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+						<div>
+							<img
+								src="assets/images/radio.svg"
+								alt=""
+								class="max-md:mx-auto"
+							/>
+						</div>
+						<h4 class="text-white mb-2 mt-3">Smart Personalization</h4>
+						<p class="text-sm">
+							Smart Personalization refers to the use of data and technology to
+							deliver tailored experiences and content to individual customers
+							or users.
+						</p>
+					</div>
+
+					<!-- 3 child -->
+					<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+						<div>
+							<img src="assets/images/scan.svg" alt="" class="max-md:mx-auto" />
+						</div>
+						<h4 class="text-white mb-2 mt-3">Resume Scanner</h4>
+						<p class="text-sm">
+							A resume scanner is a software application that uses optical
+							character recognition (OCR) technology to extract and analyze data
+							from resumes.
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- About 1 -->
+		<section id="about-1">
+			<div
+				class="container bg-screamingGreen text-black rounded-md text-center pt-8 px-6 mx-auto"
+			>
+				<h3 class="heading-tertiary">Submit Better job <br />applications</h3>
+				<p class="text-5xl md:text-8xl font-semibold my-5">10x faster</p>
+				<p class="md:text-[0.8125rem] text-xs max-md:px-3">
+					AI cover letter generator, resume keyword checker, outreach <br />
+					message writer, and more. Powered by GPT
+				</p>
+				<!-- Image -->
+				<div class="mt-2 relative w-fit mx-auto">
+					<div
+						class="absolute left-0 right-0 top-0 bottom-0 bg-gradient-to-b from-screamingGreen/0 to-screamingGreen opacity-25"
+					></div>
+
+					<img
+						src="assets/images/log-bg-black.svg"
+						alt=""
+						class="absolute h-4 xl:h-10 top-2 left-1 md:h-7 lg:left-4 lg:top-7 xl:top-9 xl:left-6 2xl:top-10 md:top-4 md:left-2 img-overlay"
+					/>
+
+					<img src="assets/images/info-screen.png" alt="" class="mx-auto" />
+				</div>
+			</div>
+		</section>
+
+		<!-- About 2 -->
+		<section id="about-2">
+			<div class="container mx-auto py-16 text-center">
+				<h3 class="text-white heading-tertiary">
+					Spend less time <br />
+					looking for work
+				</h3>
+				<p class="w-80 mx-auto text-[0.8125rem] px-9 my-3">
+					We'll help you through the hardest part of your job search.
+				</p>
+				<button class="btn-secondary">Create an Account</button>
+
+				<!-- Info Cards -->
+				<div class="flex flex-col my-10 md:text-left gap-y-8">
+					<!-- 1st row -->
+					<div
+						class="flex flex-col md:flex-row gap-8 justify-between max-md:items-center"
+					>
+						<!-- 1st child -->
+						<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+							<div>
+								<img
+									src="assets/images/file.svg"
+									alt=""
+									class="max-md:mx-auto"
+								/>
+							</div>
+							<h4 class="text-white mb-2 mt-3">Cover Letter</h4>
+							<p class="text-sm">
+								A cover letter is a document that accompanies a job application
+								and is written to introduce the applicant to the employer.
+							</p>
+						</div>
+
+						<!-- 2nd child -->
+						<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+							<div>
+								<img
+									src="assets/images/mail.svg"
+									alt=""
+									class="max-md:mx-auto"
+								/>
+							</div>
+							<h4 class="text-white mb-2 mt-3">Resignation Letters</h4>
+							<p class="text-sm">
+								A resignation letter is a formal document that an employee
+								writes to inform their employer of their decision to leave the
+								company.
+							</p>
+						</div>
+						<!-- 3rd child -->
+						<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+							<div>
+								<img
+									src="assets/images/git-pull-request.svg"
+									alt=""
+									class="max-md:mx-auto"
+								/>
+							</div>
+							<h4 class="text-white mb-2 mt-3">Connection Request</h4>
+							<p class="text-sm">
+								A connection request is a message sent on a social networking
+								site, such as LinkedIn, requesting to connect with another user.
+							</p>
+						</div>
+					</div>
+
+					<!-- 2nd Row -->
+					<div
+						class="flex flex-col md:flex-row gap-8 justify-between max-md:items-center"
+					>
+						<!-- 1st child -->
+						<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+							<div>
+								<img
+									src="assets/images/send.svg"
+									alt=""
+									class="max-md:mx-auto"
+								/>
+							</div>
+							<h4 class="text-white mb-2 mt-3">Outreach Emails</h4>
+							<p class="text-sm">
+								Outreach emails are messages sent by individuals or businesses
+								to introduce themselves, establish a connection, or propose a
+								collaboration.
+							</p>
+						</div>
+
+						<!-- 2nd child -->
+						<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+							<div>
+								<img
+									src="assets/images/grid.svg"
+									alt=""
+									class="max-md:mx-auto"
+								/>
+							</div>
+							<h4 class="text-white mb-2 mt-3">Resume Optimization</h4>
+							<p class="text-sm">
+								Smart Personalization refers to the use of data and technology
+								to deliver tailored experiences and content to individual
+								customers or users.
+							</p>
+						</div>
+						<!-- 3rd child -->
+						<div class="bg-eerieBlack rounded-lg p-6 md:max-w-md max-w-sm">
+							<div>
+								<img
+									src="assets/images/codesandbox.svg"
+									alt=""
+									class="max-md:mx-auto"
+								/>
+							</div>
+							<h4 class="text-white mb-2 mt-3">Resume Design</h4>
+							<p class="text-sm">
+								A resume scanner is a software application that uses optical
+								character recognition (OCR) technology to extract and analyze
+								data from resumes.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AI & Optimize Section -->
+		<section id="ai-optimize" class="bg-screamingGreen">
+			<div class="container mx-auto py-10 max-md:text-center">
+				<!-- Ai Content -->
+				<div class="flex flex-col gap-8 lg:gap-12">
+					<!-- 1st child -->
+					<div
+						class="flex flex-col md:flex-row items-center justify-center text-black gap-8 lg:gap-24"
+					>
+						<div>
+							<h3 class="heading-tertiary text-black max-w-[30rem]">
+								Free AI cover letter generator powered by GPT
+							</h3>
+							<p class="my-4 text-[0.8125rem] max-w-md">
+								A free AI cover letter generator powered by GPT is a tool that
+								uses artificial intelligence and natural language processing to
+								help job seekers create customized and effective cover letters.
+							</p>
+							<button class="btn-tertiary">Try for free</button>
+						</div>
+						<div>
+							<img src="assets/images/Illustration-ai.png" alt="" />
+						</div>
+					</div>
+					<!-- 2nd child -->
+					<div
+						class="flex flex-col md:flex-row-reverse items-center justify-center text-black gap-8 lg:gap-24"
+					>
+						<div>
+							<h3 class="heading-tertiary text-black max-w-[28.5rem]">
+								Optimize the keywords in your resume
+							</h3>
+							<p class="my-4 text-[0.8125rem] max-w-md">
+								By optimizing keywords in your resume, you can increase your
+								chances of getting noticed by recruiters and landing interviews
+								for the jobs you want.
+							</p>
+							<button class="btn-tertiary">Optimize your Resume</button>
+						</div>
+						<div>
+							<img src="assets/images/Illustration-optimize.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resume Design -->
+		<section id="resume-design">
+			<div class="container py-10 mx-auto">
+				<div
+					class="flex flex-col md:flex-row items-center justify-center gap-8 lg:gap-24 max-md:text-center"
+				>
+					<div>
+						<h3 class="heading-tertiary text-white max-w-[28.5rem]">
+							Free resume design templates
+						</h3>
+						<p class="my-4 text-[0.8125rem] max-w-md">
+							By following these design tips, you can create a professional and
+							effective resume that will help you stand out to recruiters and
+							hiring managers.
+						</p>
+						<button class="btn-secondary">Create an Account</button>
+					</div>
+					<div>
+						<img src="assets/images/resume-design.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer id="footer" class="bg-screamingGreen">
+			<div class="container mx-auto py-10 text-center text-black">
+				<h3 class="heading-tertiary">What’s next</h3>
+				<p class="my-4 md:text-[0.8125rem] text-xs max-w-sm px-4 mx-auto">
+					Submit better job app — 10x faster. AI cover letter generator, resume
+					keyword checker, outreach message writer, and more. Powered by GPT
+				</p>
+				<button class="btn-tertiary">Try for Free</button>
+
+				<!-- Menus -->
+				<div
+					class="flex justify-center gap-5 lg:gap-x-20 text-center md:text-left mt-10 flex-col md:flex-row max-md:items-center"
+				>
+					<!-- Platforms -->
+					<div class="flex flex-col gap-y-3">
+						<h5 class="font-semibold">Platform</h5>
+						<div class="flex flex-col text-sm gap-y-1">
+							<a href="#" class="hover:text-white/80 duration-200"
+								>Plans and Prices</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>AI Create Letters</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>AI Resume Checker</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>Resume Templates</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200">Blog</a>
+						</div>
+					</div>
+
+					<!-- Features -->
+					<div class="flex flex-col gap-y-3">
+						<h5 class="font-semibold">Features</h5>
+						<div class="flex flex-col text-sm gap-y-1">
+							<a href="#" class="hover:text-white/80 duration-200"
+								>AI Cover Letter Creator</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>Resume Keywords Optimizer</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>ATS Resume Checker</a
+							>
+						</div>
+					</div>
+
+					<!-- Resources -->
+					<div class="flex flex-col gap-y-3">
+						<h5 class="font-semibold">Resources</h5>
+						<div class="flex flex-col text-sm gap-y-1">
+							<a href="#" class="hover:text-white/80 duration-200"
+								>4 AI Tools for Applying a Job</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>How to optimize Resume keywords</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>Why you should use Chat GPT for create Resume</a
+							>
+							<a href="#" class="hover:text-white/80 duration-200"
+								>What should you include in a Cover Letter</a
+							>
+						</div>
+					</div>
+
+					<!-- Support -->
+					<div class="flex flex-col gap-y-3">
+						<h5 class="font-semibold">Support</h5>
+						<div class="flex flex-col text-sm gap-y-2">
+							<a href="#" class="hover:text-white/80 duration-200"
+								>support@gmail.com</a
+							>
+							<div class="flex gap-x-3">
+								<img src="assets/images/instagram.svg" alt="" />
+								<img src="assets/images/facebook.svg" alt="" />
+								<img src="assets/images/linkedin.svg" alt="" />
+								<img src="assets/images/telegram.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-8 text-chineseBlack" />
+				<!-- Copyright -->
+				<div
+					class="flex flex-col md:flex-row justify-center text-sm md:divide-x text-mediumJungleGreen gap-y-3"
+				>
+					<div class="px-2"><a href="#">&copy; Copywriting</a></div>
+					<div class="px-2"><a href="#">All Rights Reserved</a></div>
+					<div class="px-2"><a href="#">Terms of Use</a></div>
+					<div class="px-2"><a href="#">Privacy</a></div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
